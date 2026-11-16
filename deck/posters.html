@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Venice Oscura — slate key art</title>
+<meta name="description" content="The twelve one-sheets on the Venice Oscura slate, with the spec for adding more.">
+<style>
+/* Venice brand system (venice.ai/brand). Fonts are licensed to Venice. */
+@font-face{font-family:'Canela';font-weight:400;font-display:swap;src:local('Canela Regular'),local('Canela-Regular'),url(../fonts/venice/canela-regular.woff2) format('woff2')}
+@font-face{font-family:'Aeonik';font-weight:400;font-display:swap;src:local('Aeonik Regular'),local('Aeonik-Regular'),url(../fonts/venice/aeonik-regular.woff2) format('woff2')}
+@font-face{font-family:'Aeonik Fono';font-weight:400;font-display:swap;src:url(../fonts/venice/aeonik-fono-regular.woff2) format('woff2')}
+:root{
+  --venetian:#3C8FDD; --midnight:#0A121A; --off-white:#F7F5ED; --neutral-dark:#151F28;
+  --dim:rgba(247,245,237,.72); --mute:rgba(247,245,237,.5); --line:rgba(247,245,237,.13); --line-2:rgba(247,245,237,.07);
+  --gut:clamp(20px,4vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--midnight);color:var(--off-white);font-family:"Aeonik",system-ui,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1500px;margin-inline:auto;padding-inline:var(--gut)}
+header{border-bottom:1px solid var(--line-2)}
+header .in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{width:62px;height:auto}
+.brand i{width:1px;height:24px;background:rgba(247,245,237,.3)}
+.brand b{font-family:"Canela",Georgia,serif;font-weight:400;font-size:25px;line-height:1;padding-top:2px}
+header nav a{color:var(--dim);font-size:15px;margin-left:22px}
+header nav a:hover{color:var(--off-white)}
+.eyebrow{font-family:"Aeonik Fono",ui-monospace,monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--venetian)}
+h1,h2{font-family:"Canela",Georgia,serif;font-weight:400;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(40px,5.6vw,76px);line-height:.98;margin:14px 0 18px;max-width:16ch}
+h2{font-size:clamp(28px,3vw,40px);line-height:1.04;margin-bottom:22px}
+.lede{font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--dim);max-width:56ch}
+.hero{padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(36px,4vw,56px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:36px 22px;padding-bottom:clamp(48px,6vw,90px)}
+.one .art{border-radius:12px;overflow:hidden;border:1px solid var(--line-2);background:var(--neutral-dark)}
+.one .art img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.one .nm{font-family:"Canela",Georgia,serif;font-size:21px;line-height:1.12;margin-top:13px}
+.one .fn{font-family:"Aeonik Fono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.04em;color:var(--mute);margin-top:6px}
+.spec{border-top:1px solid var(--line-2);padding-block:clamp(40px,5vw,72px)}
+.rows{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--neutral-dark);max-width:760px}
+.row{display:flex;justify-content:space-between;gap:20px;padding:14px 20px;border-bottom:1px solid var(--line-2);font-size:15px}
+.row:last-child{border-bottom:0}
+.row span:first-child{color:var(--mute)}
+.fine{font-size:13px;color:var(--mute);margin-top:18px;max-width:70ch}
+</style>
+</head>
+<body>
+<header><div class="wrap in">
+  <a class="brand" href="index.html" aria-label="Venice Oscura deck">
+    <img src="../brand/venice-wordmark-off-white.svg" alt="Venice"><i></i><b>Oscura</b>
+  </a>
+  <nav><a href="index.html">← The deck</a><a href="../index.html#/slate">The slate, live</a></nav>
+</div></header>
+
+<div class="wrap hero">
+  <div class="eyebrow">Key art</div>
+  <h1>Twelve films on the slate</h1>
+  <p class="lede">These are the one-sheets viewers vote on. Each is a film in development, and the three with the most signals each quarter get funded.</p>
+</div>
+
+<div class="wrap"><div class="grid" id="grid"></div></div>
+
+<div class="wrap spec">
+  <h2>Adding a one-sheet</h2>
+  <div class="rows">
+    <div class="row"><span>Shape</span><span>3:4 portrait</span></div>
+    <div class="row"><span>Size</span><span>1086 × 1448 or larger</span></div>
+    <div class="row"><span>Format</span><span>WebP</span></div>
+    <div class="row"><span>Location</span><span>posters/&lt;title-as-slug&gt;.webp</span></div>
+  </div>
+  <p class="fine">Add the file, then add one entry to the SLATE list in index.html with the title, tagline and logline. The slug is the title in lower case with hyphens. Slate entries and their loglines are placeholder data.</p>
+</div>
+
+<script>
+const SLATE=['Afterlife Shift','Skin Dividend','Borrowed Sunday','Heartware','Insomnia Club','Pause for Translation',
+  'Plush Apocalypse','Second Sun','Soft Opening','Terrarium','The Match That Never Happened','The Witness Engine'];
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+document.getElementById('grid').innerHTML=SLATE.map(t=>`<a class="one" href="../index.html#/title/${slug(t)}">
+  <div class="art"><img loading="lazy" src="../posters/${slug(t)}.webp" alt="${t} key art"></div>
+  <div class="nm">${t}</div><div class="fn">posters/${slug(t)}.webp</div></a>`).join('');
+</script>
+</body>
+</html>

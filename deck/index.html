@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20319%20356%22%3E%3Crect%20width%3D%22319%22%20height%3D%22356%22%20fill%3D%22%230A121A%22/%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M103.216%20238.939C97.3385%20234.569%2090.2442%20230.907%2082.3992%20228.683C74.5543%20226.459%2065.9586%20225.673%2057.5537%20226.605C49.1487%20227.537%2040.9344%20230.189%2033.7676%20234.078C26.6009%20237.967%2020.4815%20243.094%2015.7041%20248.646C10.9136%20254.187%206.74012%20260.992%203.94483%20268.653C1.14954%20276.312%20-0.267532%20284.827%200.0439159%20293.278C0.355196%20301.728%202.395%20310.115%205.74622%20317.549C9.09761%20324.983%2013.7606%20331.463%2018.946%20336.636C24.119%20341.821%2030.599%20346.484%2038.0325%20349.835C45.466%20353.187%2053.8532%20355.226%2062.3039%20355.538C70.7547%20355.849%2079.2691%20354.432%2086.9291%20351.637C94.5891%20348.841%20101.395%20344.668%20106.935%20339.877C112.487%20335.1%20117.614%20328.981%20121.504%20321.814C125.393%20314.647%20128.044%20306.433%20128.977%20298.028C129.909%20289.623%20129.122%20281.027%20126.898%20273.182C124.674%20265.338%20121.013%20258.243%20116.643%20252.365L131.077%20237.931L138.6%20245.454H144.567L151.769%20238.252V232.284L144.246%20224.762L159.5%20209.508L174.754%20224.762L167.231%20232.284V238.252L174.433%20245.454H180.4L187.923%20237.931L202.357%20252.365C197.987%20258.243%20194.326%20265.338%20192.102%20273.182C189.878%20281.027%20189.091%20289.623%20190.023%20298.028C190.956%20306.433%20193.607%20314.647%20197.496%20321.814C201.386%20328.981%20206.513%20335.1%20212.065%20339.877C217.605%20344.668%20224.411%20348.841%20232.071%20351.637C239.731%20354.432%20248.245%20355.849%20256.696%20355.538C265.147%20355.226%20273.534%20353.187%20280.968%20349.835C288.401%20346.484%20294.881%20341.821%20300.054%20336.636C305.239%20331.463%20309.902%20324.983%20313.254%20317.549C316.605%20310.115%20318.645%20301.728%20318.956%20293.278C319.268%20284.827%20317.85%20276.312%20315.055%20268.653C312.26%20260.992%20308.086%20254.187%20303.296%20248.646C298.518%20243.094%20292.399%20237.967%20285.232%20234.078C278.066%20230.189%20269.851%20227.537%20261.446%20226.605C253.041%20225.673%20244.446%20226.459%20236.601%20228.683C228.756%20230.907%20221.662%20234.569%20215.784%20238.939L201.618%20224.75L209.141%20217.227V211.26L201.682%20203.801H195.714L188.186%20211.329L172.927%20196.082L252.924%20116.085L285.306%20148.467V114.774H319L286.617%2082.391L316.016%2052.9918V47.0245L308.557%2039.5652H302.59L159.5%20182.655L16.4103%2039.5652H10.4428L2.98374%2047.0245V52.9918L32.3828%2082.391L0%20114.774H33.6938V148.467L66.0764%20116.085L146.073%20196.082L130.814%20211.329L123.286%20203.801H117.318L109.859%20211.26V217.227L117.382%20224.75L103.216%20238.939ZM233.03%20313.043C229.736%20319.8%20230.421%20329.163%20234.662%20335.369C238.558%20341.797%20246.8%20346.292%20254.314%20346.087C261.828%20346.292%20270.07%20341.797%20273.967%20335.369C278.208%20329.163%20278.892%20319.8%20275.598%20313.043L276.419%20312.16C283.175%20315.472%20292.552%20314.801%20298.768%20310.561C305.206%20306.668%20309.712%20298.417%20309.506%20290.896C309.712%20283.375%20305.206%20275.124%20298.768%20271.23C292.552%20266.991%20283.175%20266.32%20276.419%20269.632L275.598%20268.748C278.892%20261.992%20278.208%20252.629%20273.967%20246.422C270.07%20239.994%20261.828%20235.499%20254.314%20235.704C246.8%20235.499%20238.558%20239.994%20234.662%20246.422C230.421%20252.629%20229.736%20261.992%20233.03%20268.748L232.21%20269.632C225.454%20266.32%20216.077%20266.991%20209.861%20271.23C203.422%20275.124%20198.917%20283.375%20199.123%20290.896C198.917%20298.417%20203.422%20306.668%20209.861%20310.561C216.077%20314.801%20225.454%20315.472%20232.21%20312.16L233.03%20313.043ZM84.3382%20335.369C88.5794%20329.163%2089.2635%20319.8%2085.9695%20313.043L86.7899%20312.16C93.546%20315.472%20102.923%20314.801%20109.139%20310.561C115.578%20306.668%20120.083%20298.417%20119.877%20290.896C120.083%20283.375%20115.578%20275.124%20109.139%20271.23C102.923%20266.991%2093.546%20266.32%2086.7899%20269.632L85.9695%20268.748C89.2635%20261.992%2088.5794%20252.629%2084.3382%20246.422C80.4417%20239.994%2072.1997%20235.499%2064.6857%20235.704C57.1716%20235.499%2048.9296%20239.994%2045.033%20246.422C40.7919%20252.629%2040.1077%20261.992%2043.4017%20268.748L42.5813%20269.632C35.8252%20266.32%2026.4483%20266.991%2020.2323%20271.23C13.7937%20275.124%209.28837%20283.375%209.49415%20290.896C9.28837%20298.417%2013.7937%20306.668%2020.2323%20310.561C26.4483%20314.801%2035.8252%20315.472%2042.5813%20312.16L43.4017%20313.043C40.1077%20319.8%2040.7919%20329.163%2045.033%20335.369C48.9296%20341.797%2057.1716%20346.292%2064.6857%20346.087C72.1997%20346.292%2080.4417%20341.797%2084.3382%20335.369Z%22%20fill%3D%22%23F7F5ED%22/%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M162.483%20135.58L215.069%2082.9935V18.9881L196.081%200L159.5%2036.5818L122.918%200L103.93%2018.9881V82.9935L156.516%20135.58H162.483ZM196.082%2013.4266L164.247%2045.2613V106.963L196.082%2075.1285V13.4266ZM154.753%2045.2613L122.918%2013.4266V75.1285L154.753%20106.963V45.2613Z%22%20fill%3D%22%23F7F5ED%22/%3E%3C/svg%3E">
+<title>Venice Oscura — a proposal for Venice AI</title>
+<style>
+/* Venice brand system (venice.ai/brand). Canela, Aeonik and Aeonik Fono are
+   licensed to Venice; local() first, bundled woff2 second. */
+@font-face{font-family:'Canela';font-weight:400;src:local('Canela Regular'),local('Canela-Regular'),url(../fonts/venice/canela-regular.woff2) format('woff2')}
+@font-face{font-family:'Aeonik';font-weight:400;src:local('Aeonik Regular'),local('Aeonik-Regular'),url(../fonts/venice/aeonik-regular.woff2) format('woff2')}
+@font-face{font-family:'Aeonik';font-weight:700;src:local('Aeonik Bold'),local('Aeonik-Bold'),url(../fonts/venice/aeonik-bold.woff2) format('woff2')}
+@font-face{font-family:'Aeonik Fono';font-weight:400;src:url(../fonts/venice/aeonik-fono-regular.woff2) format('woff2')}
+@font-face{font-family:'Aeonik Fono';font-weight:700;src:url(../fonts/venice/aeonik-fono-bold.woff2) format('woff2')}
+:root{
+  --venetian:#3C8FDD; --venetian-dark:#125DA3;            /* primary accent, never the logo */
+  --v-deep:#0E2942; --v-midnight:#0A121A; --v-bone:#F7F5ED; /* foundations */
+  --sea-light:#B3D0EB; --stucco:#BEA989; --neutral-gray:#6E7176;
+  --void:#080F16; --ground:var(--v-midnight); --panel:#151F28; --panel-2:#151F28;
+  --bone:var(--v-bone); --dim:rgba(247,245,237,.72); --muted:rgba(247,245,237,.5);
+  --line:rgba(247,245,237,.14); --line-2:rgba(247,245,237,.07);
+  --live:var(--stucco);
+  --ff-display:"Canela",Georgia,"Times New Roman",serif;
+  --ff-sans:"Aeonik",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --ff-mono:"Aeonik Fono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  background:var(--void); color:var(--bone); font-family:var(--ff-sans);
+  overflow:hidden; -webkit-font-smoothing:antialiased; text-wrap:pretty;
+}
+#stage{
+  position:fixed; top:0; left:0; width:1920px; height:1080px;
+  transform-origin:0 0; background:var(--void);
+}
+.slide{
+  position:absolute; inset:0; padding:78px 96px 84px;
+  display:none; flex-direction:column; overflow:hidden;
+}
+.slide.on{ display:flex; }
+
+/* ---- slide furniture ---- */
+.hd{display:flex; align-items:baseline; gap:20px; padding-bottom:20px; border-bottom:1px solid var(--line-2); margin-bottom:44px; flex:none}
+.hd .k{font-family:var(--ff-mono); font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:var(--venetian)}
+.hd .t{font-family:var(--ff-mono); font-size:15px; letter-spacing:.10em; text-transform:uppercase; color:var(--muted); margin-left:auto}
+.body{flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center}
+/* the strip is pinned, so reserve its room or centred content slides under it */
+.slide:has(.dis) .body{padding-bottom:132px}
+h1,h2,h3{font-family:var(--ff-display); font-weight:400}
+h1{font-size:146px; line-height:.96; letter-spacing:-.025em; margin:0}
+h2{font-size:68px; line-height:1.04; letter-spacing:-.02em; margin:0 0 28px; max-width:27ch}
+h2 em,h1 em{font-style:normal; color:var(--sea-light)}
+p{font-size:27px; line-height:1.5; color:var(--dim); margin:0 0 20px; max-width:52ch}
+p.lede{font-size:34px; line-height:1.42; color:var(--bone); max-width:44ch}
+b.hi{color:var(--bone); font-weight:700}
+.mono{font-family:var(--ff-mono)}
+.accent{color:var(--venetian)}
+.tbd{color:var(--live); border-bottom:1px dashed var(--live)}
+.pill{display:inline-block; font-family:var(--ff-mono); font-size:14px; letter-spacing:.10em; text-transform:uppercase; border:1px solid var(--line); padding:7px 14px; color:var(--dim); margin:0 8px 8px 0}
+
+/* ---- cover ---- */
+.cover-art{position:absolute; top:0; bottom:0; left:1010px; right:70px; display:grid;
+  grid-template-columns:repeat(3,1fr); gap:20px; align-content:center}
+.cover-art img{width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:12px; border:1px solid var(--line-2)}
+.cover-art img:nth-child(odd){transform:translateY(-44px)}
+.cover-art img:nth-child(even){transform:translateY(44px)}
+.cover-scrim{display:none}
+.cover .body{position:relative; z-index:2}
+.cover .mark{display:flex; align-items:center; gap:30px; margin-bottom:60px; color:var(--v-bone)}
+.cover .mk-word{width:176px; height:80px; flex:none}
+.cover .mk-div{width:1px; height:64px; background:rgba(247,245,237,.3)}
+.cover .mk-sub{font-family:var(--ff-display); font-size:72px; line-height:1; letter-spacing:-.01em; padding-top:6px}
+.cover .sub{font-size:34px; line-height:1.42; color:var(--dim); max-width:42ch; margin:34px 0 0}
+.cover .meta{margin-top:auto; display:flex; gap:56px; font-family:var(--ff-mono); font-size:16px; letter-spacing:.08em; color:var(--muted); text-transform:uppercase}
+
+/* ---- grids ---- */
+.g2{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start}
+.g3{display:grid; grid-template-columns:repeat(3,1fr); gap:48px; align-items:start}
+.g4{display:grid; grid-template-columns:repeat(4,1fr); gap:36px; align-items:start}
+.col{border-top:2px solid var(--venetian); padding-top:24px}
+.col .n{font-family:var(--ff-mono); font-size:15px; color:var(--venetian); letter-spacing:.12em; margin-bottom:15px}
+.col h3{font-size:35px; margin:0 0 14px; line-height:1.1; letter-spacing:-.015em}
+.col p{font-size:22px; line-height:1.48; margin:0; color:var(--dim); max-width:34ch}
+.col.nf{border-top-color:var(--line)}
+.col.nf .n{color:var(--muted)}
+
+/* ---- stat blocks ---- */
+.stat{border-left:2px solid var(--venetian); padding-left:22px}
+.stat .v{font-family:var(--ff-display); font-size:72px; letter-spacing:-.02em; line-height:1; color:var(--venetian)}
+.stat .l{font-family:var(--ff-mono); font-size:16px; color:var(--dim); line-height:1.5; margin-top:13px; letter-spacing:.03em}
+
+/* ---- tables ---- */
+table{width:100%; border-collapse:collapse; font-family:var(--ff-mono); font-size:22px}
+th{text-align:left; font-weight:400; font-size:15px; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); padding:0 0 12px; border-bottom:1px solid var(--line)}
+td{padding:12px 0; border-bottom:1px solid var(--line-2); color:var(--dim)}
+th.r,td.r{text-align:right; font-variant-numeric:tabular-nums}
+td.k{color:var(--bone)}
+tr.tot td{border-bottom:0; color:var(--bone); font-weight:700; padding-top:16px; font-size:24px}
+tr.tot td.r{color:var(--venetian)}
+
+/* ---- bar chart ---- */
+.bars{margin-top:6px}
+.bar{display:grid; grid-template-columns:290px 1fr 190px; align-items:center; gap:26px; padding:13px 0; border-bottom:1px solid var(--line-2)}
+.bar .nm{font-family:var(--ff-mono); font-size:17px; color:var(--dim)}
+.bar .track{height:26px; background:var(--panel-2); position:relative}
+.bar .fill{position:absolute; inset:0 auto 0 0; background:var(--venetian)}
+.bar.win .fill{background:var(--venetian)}
+.bar.lose .fill{background:var(--neutral-gray)}
+.bar .vv{font-family:var(--ff-mono); font-size:19px; text-align:right; color:var(--bone); font-variant-numeric:tabular-nums}
+
+/* ---- roster / list ---- */
+.list{margin:0; padding:0; list-style:none}
+.list li{display:grid; grid-template-columns:56px 1fr; gap:20px; padding:15px 0; border-bottom:1px solid var(--line-2); align-items:baseline}
+.list li:last-child{border-bottom:0}
+.list .n{font-family:var(--ff-mono); font-size:16px; color:var(--venetian)}
+.list .tx{font-size:24px; line-height:1.42; color:var(--dim); max-width:70ch}
+.slide:has([data-tight]) .list li{padding:14px 0}
+.slide:has([data-tight]) .list .tx{font-size:22px}
+.slide:has([data-tight]) .col p{font-size:20px}
+.list .tx b{color:var(--bone); font-weight:700}
+
+/* ---- quote ---- */
+.quote{font-family:var(--ff-display); font-size:54px; line-height:1.2; letter-spacing:-.015em; color:var(--bone); margin:0; max-width:26ch}
+.quote b{font-weight:400; color:var(--sea-light)}
+
+/* ---- disclaimer strip ---- */
+.dis{position:absolute; left:96px; right:96px; bottom:58px; font-family:var(--ff-mono); font-size:14px; line-height:1.7; color:var(--muted); letter-spacing:.03em; border-top:1px solid var(--line-2); padding-top:16px}
+
+/* ---- chrome ---- */
+#chrome{position:fixed; right:26px; bottom:20px; display:flex; align-items:center; gap:18px; z-index:90; font-family:var(--ff-mono); font-size:13px; color:var(--muted); letter-spacing:.08em}
+#chrome button{background:transparent; border:1px solid var(--line); color:var(--dim); width:38px; height:34px; font-family:var(--ff-mono); font-size:14px; cursor:pointer}
+#chrome button:hover{border-color:var(--venetian); color:var(--venetian)}
+#bar{position:fixed; left:0; bottom:0; height:2px; background:var(--venetian); z-index:95; transition:width .28s cubic-bezier(.19,1,.22,1)}
+#idx{margin-top:auto; padding-top:26px; display:flex; justify-content:space-between; font-family:var(--ff-mono); font-size:15px; color:var(--muted); letter-spacing:.09em}
+:focus-visible{outline:2px solid var(--venetian); outline-offset:3px}
+
+@media print{
+  html,body{overflow:visible; height:auto}
+  body{background:#fff}
+  #stage{position:static; width:auto; height:auto; transform:none !important}
+  .slide{position:static; display:flex !important; page-break-after:always; break-after:page; height:1080px; background:#080F16}
+  #chrome,#bar{display:none}
+}
+@media (prefers-reduced-motion:reduce){ #bar{transition:none} }
+</style>
+</head>
+<body>
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0"><symbol id="v-keys" viewBox="0 0 319 356" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M103.216 238.939C97.3385 234.569 90.2442 230.907 82.3992 228.683C74.5543 226.459 65.9586 225.673 57.5537 226.605C49.1487 227.537 40.9344 230.189 33.7676 234.078C26.6009 237.967 20.4815 243.094 15.7041 248.646C10.9136 254.187 6.74012 260.992 3.94483 268.653C1.14954 276.312 -0.267532 284.827 0.0439159 293.278C0.355196 301.728 2.395 310.115 5.74622 317.549C9.09761 324.983 13.7606 331.463 18.946 336.636C24.119 341.821 30.599 346.484 38.0325 349.835C45.466 353.187 53.8532 355.226 62.3039 355.538C70.7547 355.849 79.2691 354.432 86.9291 351.637C94.5891 348.841 101.395 344.668 106.935 339.877C112.487 335.1 117.614 328.981 121.504 321.814C125.393 314.647 128.044 306.433 128.977 298.028C129.909 289.623 129.122 281.027 126.898 273.182C124.674 265.338 121.013 258.243 116.643 252.365L131.077 237.931L138.6 245.454H144.567L151.769 238.252V232.284L144.246 224.762L159.5 209.508L174.754 224.762L167.231 232.284V238.252L174.433 245.454H180.4L187.923 237.931L202.357 252.365C197.987 258.243 194.326 265.338 192.102 273.182C189.878 281.027 189.091 289.623 190.023 298.028C190.956 306.433 193.607 314.647 197.496 321.814C201.386 328.981 206.513 335.1 212.065 339.877C217.605 344.668 224.411 348.841 232.071 351.637C239.731 354.432 248.245 355.849 256.696 355.538C265.147 355.226 273.534 353.187 280.968 349.835C288.401 346.484 294.881 341.821 300.054 336.636C305.239 331.463 309.902 324.983 313.254 317.549C316.605 310.115 318.645 301.728 318.956 293.278C319.268 284.827 317.85 276.312 315.055 268.653C312.26 260.992 308.086 254.187 303.296 248.646C298.518 243.094 292.399 237.967 285.232 234.078C278.066 230.189 269.851 227.537 261.446 226.605C253.041 225.673 244.446 226.459 236.601 228.683C228.756 230.907 221.662 234.569 215.784 238.939L201.618 224.75L209.141 217.227V211.26L201.682 203.801H195.714L188.186 211.329L172.927 196.082L252.924 116.085L285.306 148.467V114.774H319L286.617 82.391L316.016 52.9918V47.0245L308.557 39.5652H302.59L159.5 182.655L16.4103 39.5652H10.4428L2.98374 47.0245V52.9918L32.3828 82.391L0 114.774H33.6938V148.467L66.0764 116.085L146.073 196.082L130.814 211.329L123.286 203.801H117.318L109.859 211.26V217.227L117.382 224.75L103.216 238.939ZM233.03 313.043C229.736 319.8 230.421 329.163 234.662 335.369C238.558 341.797 246.8 346.292 254.314 346.087C261.828 346.292 270.07 341.797 273.967 335.369C278.208 329.163 278.892 319.8 275.598 313.043L276.419 312.16C283.175 315.472 292.552 314.801 298.768 310.561C305.206 306.668 309.712 298.417 309.506 290.896C309.712 283.375 305.206 275.124 298.768 271.23C292.552 266.991 283.175 266.32 276.419 269.632L275.598 268.748C278.892 261.992 278.208 252.629 273.967 246.422C270.07 239.994 261.828 235.499 254.314 235.704C246.8 235.499 238.558 239.994 234.662 246.422C230.421 252.629 229.736 261.992 233.03 268.748L232.21 269.632C225.454 266.32 216.077 266.991 209.861 271.23C203.422 275.124 198.917 283.375 199.123 290.896C198.917 298.417 203.422 306.668 209.861 310.561C216.077 314.801 225.454 315.472 232.21 312.16L233.03 313.043ZM84.3382 335.369C88.5794 329.163 89.2635 319.8 85.9695 313.043L86.7899 312.16C93.546 315.472 102.923 314.801 109.139 310.561C115.578 306.668 120.083 298.417 119.877 290.896C120.083 283.375 115.578 275.124 109.139 271.23C102.923 266.991 93.546 266.32 86.7899 269.632L85.9695 268.748C89.2635 261.992 88.5794 252.629 84.3382 246.422C80.4417 239.994 72.1997 235.499 64.6857 235.704C57.1716 235.499 48.9296 239.994 45.033 246.422C40.7919 252.629 40.1077 261.992 43.4017 268.748L42.5813 269.632C35.8252 266.32 26.4483 266.991 20.2323 271.23C13.7937 275.124 9.28837 283.375 9.49415 290.896C9.28837 298.417 13.7937 306.668 20.2323 310.561C26.4483 314.801 35.8252 315.472 42.5813 312.16L43.4017 313.043C40.1077 319.8 40.7919 329.163 45.033 335.369C48.9296 341.797 57.1716 346.292 64.6857 346.087C72.1997 346.292 80.4417 341.797 84.3382 335.369Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M162.483 135.58L215.069 82.9935V18.9881L196.081 0L159.5 36.5818L122.918 0L103.93 18.9881V82.9935L156.516 135.58H162.483ZM196.082 13.4266L164.247 45.2613V106.963L196.082 75.1285V13.4266ZM154.753 45.2613L122.918 13.4266V75.1285L154.753 106.963V45.2613Z"/></symbol><symbol id="v-word" viewBox="0 0 467 212" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M465.268 152.14C464.732 151.713 464.109 151.589 463.607 151.589C462.612 151.589 461.582 152.057 460.822 152.82L460.689 152.949L460.595 153.103C450.206 169.427 441.494 180.32 433.877 187.117C426.272 193.904 419.89 196.496 414.112 196.496C410.848 196.496 408.976 195.553 407.864 194.191C406.696 192.761 406.099 190.551 406.099 187.489C406.099 182.692 407.511 177.016 409.745 171.08C411.891 165.377 414.756 159.535 417.717 154.159C428.868 150.854 441.924 144.896 450.442 137.379L450.455 137.369L450.467 137.358C453.51 134.566 456.102 131.663 457.943 128.738C459.78 125.819 460.93 122.782 460.93 119.758C460.93 117.478 460.286 115.095 458.544 113.275C456.788 111.437 454.132 110.404 450.583 110.404C443.554 110.404 434.611 113.75 426.006 119.425C417.361 125.124 408.87 133.293 402.775 143.197C400.626 146.668 398.851 150.198 397.434 153.742C387.419 168.704 378.861 179.432 371.154 186.413C363.423 193.415 356.714 196.495 350.388 196.495C347.438 196.495 345.602 195.533 344.458 194.108C343.263 192.621 342.622 190.382 342.622 187.489C342.622 181.864 344.508 175.097 347.637 167.767C350.755 160.462 355.049 152.726 359.738 145.199C365.047 136.68 370.319 129.334 375.089 124.139C377.475 121.539 379.696 119.523 381.694 118.168C383.717 116.796 385.354 116.21 386.61 116.21C387.938 116.21 389.119 116.977 390.368 118.754C391.629 120.548 392.703 123.011 393.893 125.763L395.613 129.732L403.392 115.588L402.262 114.719C398.704 111.982 393.867 110.404 388.347 110.404C369.457 110.404 350.889 124.55 340.541 141.21L340.539 141.212C338.072 145.198 335.911 149.208 334.178 153.346L326.155 165.746L326.152 165.749C320.3 174.84 315.228 182.652 310.22 188.206C305.201 193.773 300.533 196.743 295.545 196.743C293.465 196.743 292.049 196.197 291.17 195.404C290.314 194.632 289.765 193.443 289.765 191.707C289.765 189.396 290.227 187.211 293.496 181.283C296.783 175.326 302.764 165.827 313.568 148.937L313.571 148.932L333.777 117.109L332.882 112.638H303.179L302.735 112.97C302.077 113.463 301.578 114.025 301.254 114.673C300.927 115.326 300.83 115.966 300.83 116.533V118.195H311.335L299.347 137.234C295.861 142.796 292.764 147.899 290.192 152.825L290.182 152.832L283.326 162.99C276.358 173.317 270.416 182.007 264.752 188.128C259.064 194.274 253.962 197.488 248.729 197.488C246.899 197.488 245.675 197.005 244.923 196.313C244.19 195.641 243.692 194.576 243.692 192.947C243.692 191.032 244.446 188.613 246.663 184.787C248.871 180.976 252.414 175.96 257.747 168.891L265.437 158.72L265.438 158.719C275.477 145.417 278.426 137.626 278.426 127.697C278.426 122.879 277.739 118.613 275.9 115.501C273.978 112.248 270.88 110.404 266.592 110.404C260.89 110.404 254.682 113.313 248.182 118.304C241.649 123.321 234.624 130.594 227.255 139.675L227.08 139.891H224.837V126.953C224.837 122.216 223.953 118.541 221.707 116.067C219.424 113.552 216.069 112.638 212.01 112.638H202.899L202.412 113.124C201.724 113.812 201.063 114.817 200.734 116.129L200.218 118.195H211.018C214.131 118.195 215.662 118.751 216.435 119.427C217.14 120.044 217.543 121.058 217.543 122.983C217.543 124.845 216.862 127.181 215.412 130.203C213.971 133.205 211.848 136.729 209.126 140.936L209.121 140.943L171.527 200.316H192.817L214.404 167.046L215.636 165.075C226.02 149.749 235.741 137.518 244.367 129.138C248.682 124.945 252.685 121.753 256.323 119.618C259.973 117.476 263.151 116.458 265.848 116.458C267.484 116.458 268.21 116.842 268.549 117.181C268.885 117.517 269.148 118.117 269.148 119.262C269.148 120.944 268.444 123.186 266.691 126.329C264.953 129.446 262.283 133.277 258.576 138.096L258.575 138.098L250.388 148.766L250.385 148.769C239.881 162.525 234.91 173.552 234.91 184.512C234.91 188.488 235.543 192.972 237.542 196.523C239.607 200.191 243.111 202.797 248.481 202.797C255.986 202.797 262.87 197.813 269.265 190.9C273.83 185.966 278.316 179.859 282.769 173.403C282.248 176.418 281.974 179.521 281.974 182.775C281.974 186.572 282.408 191.286 284.284 195.107C285.234 197.042 286.579 198.797 288.467 200.065C290.365 201.34 292.711 202.053 295.545 202.053C302.598 202.053 308.78 197.571 314.405 191.355C319.71 185.492 324.796 177.769 329.888 169.906C329.713 171.677 329.622 173.484 329.622 175.332C329.622 182.389 331.286 189.068 334.653 194.035C338.057 199.057 343.197 202.301 349.892 202.301C357.268 202.301 364.535 199.066 372.292 192.521C378.817 187.017 385.777 179.097 393.548 168.573C393.246 170.935 393.098 173.275 393.098 175.581C393.098 182.531 394.832 189.147 398.23 194.077C401.658 199.051 406.791 202.301 413.368 202.301C420.852 202.301 428.546 199.011 437.044 191.495C445.528 183.993 454.93 172.181 465.882 154.885L466.139 154.478V153.996C466.139 153.288 465.852 152.607 465.268 152.14ZM438.289 124.26C441.035 121.41 443.614 119.25 445.97 117.812C448.339 116.368 450.377 115.714 452.072 115.714C453.493 115.714 454.231 116.112 454.639 116.548C455.063 117.006 455.372 117.78 455.372 119.014C455.372 120.805 454.613 122.971 453.059 125.407C451.613 127.671 449.545 130.059 447.004 132.44C446.837 132.598 446.665 132.756 446.494 132.914L446.485 132.92L446.489 132.916C440.091 138.696 430.586 143.831 421.518 147.339C427.301 137.583 433.032 129.723 438.289 124.26Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M187.919 154.478V153.996C187.919 153.288 187.631 152.607 187.047 152.14C186.514 151.713 185.891 151.589 185.389 151.589C184.392 151.589 183.364 152.057 182.601 152.82L182.472 152.949L182.374 153.103C171.986 169.427 163.275 180.32 155.657 187.117C148.053 193.904 141.67 196.496 135.893 196.496C132.628 196.496 130.756 195.553 129.644 194.191C128.476 192.761 127.879 190.551 127.879 187.489C127.879 182.692 129.291 177.016 131.525 171.08C133.671 165.377 136.536 159.535 139.497 154.159C150.648 150.854 163.703 144.896 172.223 137.379L172.234 137.369L172.246 137.358C175.291 134.566 177.884 131.663 179.725 128.738C181.561 125.819 182.709 122.782 182.709 119.758C182.709 117.478 182.067 115.095 180.326 113.275C178.567 111.437 175.912 110.404 172.364 110.404C165.335 110.404 156.392 113.75 147.786 119.425C139.141 125.125 130.649 133.295 124.553 143.2C117.95 153.868 114.879 165.084 114.879 175.581C114.879 182.531 116.612 189.147 120.01 194.077C123.438 199.051 128.572 202.301 135.148 202.301C142.632 202.301 150.327 199.011 158.827 191.495C167.31 183.993 176.711 172.181 187.662 154.885L187.919 154.478ZM160.07 124.26C162.815 121.41 165.395 119.25 167.752 117.812C170.119 116.368 172.158 115.714 173.852 115.714C175.272 115.714 176.012 116.112 176.418 116.548C176.843 117.006 177.152 117.78 177.152 119.014C177.152 120.805 176.395 122.971 174.839 125.407C173.296 127.822 171.048 130.379 168.269 132.917C161.868 138.697 152.368 143.831 143.298 147.339C149.082 137.583 154.811 129.723 160.07 124.26Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M133.572 100.717C135.965 97.2638 138.342 93.8321 140.714 90.4407C156.355 68.0712 171.181 46.8792 187.261 31.2586C203.316 15.6627 220.437 5.80557 240.641 5.80557C247.657 5.80557 254.916 7.0173 261.186 9.18752L262.732 9.72294L264.888 3.79563L263.194 3.29385C256.352 1.26674 248.502 0 240.641 0C218.918 0 200.561 10.5254 183.903 26.5468H67.2699L63.7863 32.3523H111.824C99.2618 38.3527 90.0162 48.4214 83.0906 59.2895C74.6934 72.4676 69.616 86.9652 66.1435 97.1347C62.4092 107.819 59.3401 117.665 56.5203 126.711L56.5177 126.72C50.4889 146.062 45.6282 161.62 37.8482 174.273C30.1269 186.831 19.4975 196.563 1.81478 204.071L0 204.841L4.15987 211.312L5.53488 210.51C11.3705 207.106 16.8917 204.738 23.4899 202.776C50.4138 194.768 71.9097 177.816 90.5587 157.341C106.359 139.994 120.198 120.019 133.572 100.717ZM37.5089 187.949C47.2683 179.283 55.1707 169.603 62.2539 157.545C70.0953 144.196 76.9322 127.933 84.172 106.903L84.1715 106.905L84.1724 106.902C86.0902 101.365 87.865 95.8374 89.5944 90.4501L89.5974 90.4411C94.7083 74.5218 99.3995 59.9508 106.287 49.3278C113.095 38.8292 121.936 32.3523 135.446 32.3523H178.168C163.589 47.7331 149.961 67.1733 135.916 87.2107L135.86 87.29C108.295 126.615 79.0834 168.208 37.5089 187.949Z"/></symbol></svg>
+
+
+<div id="stage">
+
+<section class="slide cover on" data-t="Cover">
+  <div class="cover-art" aria-hidden="true">
+    <!-- Three one-sheets from the slate. Swap any of these for another file in posters/. -->
+    <img src="../posters/second-sun.webp" alt="" onerror="this.remove()">
+    <img src="../posters/afterlife-shift.webp" alt="" onerror="this.remove()">
+    <img src="../posters/terrarium.webp" alt="" onerror="this.remove()">
+  </div>
+  <div class="cover-scrim" aria-hidden="true"></div>
+  <div class="body">
+    <div class="mark">
+      <svg class="mk-word" viewBox="0 0 467 212" aria-hidden="true"><use href="#v-word"/></svg>
+      <span class="mk-div"></span><span class="mk-sub">Oscura</span>
+    </div>
+    <h1>The Criterion<br>Collection for<br><em>AI cinema</em></h1>
+    <p class="sub">A curated streaming home for independent AI film, built by Venice. Free with Venice Pro, $6.99 on its own, and a free shelf open to everyone. Viewers vote on which films get made next, and the models behind every film are one click away inside Venice.</p>
+    <div class="meta">
+      <span>A proposal for Venice AI</span>
+      <span>Málaga, Spain</span>
+      <span>November 2026</span>
+      <span><a href="posters.html" style="color:var(--venetian);text-decoration:none;border-bottom:1px solid var(--venetian)">Slate key art →</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="The problem">
+  <div class="hd"><span class="k">01 / The problem</span><span class="t">AI cinema has no shelf</span></div>
+  <div class="body">
+    <h2>More finished AI cinema exists this year than in the last three combined. <em>There is nowhere to put it</em></h2>
+    <div class="g3" style="margin-top:14px">
+      <div class="col">
+        <div class="n">01</div>
+        <h3>Feeds have no memory</h3>
+        <p>A finished film is published as a scroll. It peaks in about thirty-six hours and then it does not exist. Nothing accumulates, so nothing compounds.</p>
+      </div>
+      <div class="col">
+        <div class="n">02</div>
+        <h3>Festivals don't pay rent</h3>
+        <p>The AI festival circuit is real and growing, and it is a prize economy. Selected, screened, laurel, over. No recurring revenue for the filmmaker.</p>
+      </div>
+      <div class="col">
+        <div class="n">03</div>
+        <h3>Nobody can find the good work</h3>
+        <p>Volume has outrun discovery. There is no trusted mark that says <b class="hi">this one is worth forty minutes of your life.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="Why now">
+  <div class="hd"><span class="k">02 / Why now</span><span class="t">Three forcing functions</span></div>
+  <div class="body">
+    <h2>The window is opening <em>right now</em>, and it will not stay open</h2>
+    <ul class="list">
+      <li><span class="n">01</span><span class="tx"><b>Model quality crossed the threshold.</b> Seedance 2.5, Veo 3.1, Kling 3.0, Runway Gen-4.5, MiniMax H3 and Wan 3.0 can now carry a 40-minute narrative. Two years ago this catalogue could not exist.</span></li>
+      <li><span class="n">02</span><span class="tx"><b>Provenance stopped being optional.</b> The EU AI Act's Article 50 transparency obligations applied from <b>2 August 2026</b> — AI-generated and manipulated content distributed in the EU must be disclosed, with machine-readable marking required of generative systems and a transition to 2 December 2026. A curated platform that labels properly is now a compliance asset, not a nicety.</span></li>
+      <li><span class="n">03</span><span class="tx"><b>Supply is being manufactured at scale.</b> The festival circuit — Runway's AIF, Project Odyssey, Curious Refuge, the independent AI festivals — is now producing a large, annual, self-identifying cohort of filmmakers with finished work and no home for it.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" data-t="The wedge">
+  <div class="hd"><span class="k">03 / The wedge</span><span class="t">Selection, not generation</span></div>
+  <div class="body">
+    <div class="g2">
+      <div>
+        <h2 style="max-width:20ch">Generation is being commoditised. <em>Selection is the scarce good</em></h2>
+        <p>Every month the models get cheaper, faster and more available. The studios and the model labs are all building the same showcase onto their own tools.</p>
+        <p>What none of them is building is <b class="hi">a shelf</b> — a single place with a taste, a spine number, a permanent slot and a payout.</p>
+        <p>Criterion's value was never the projector. It was the <b class="hi">sentence explaining why the film was chosen</b>, and the promise that the choice was made by a person. That business is fifty years old and still charges more than Netflix.</p>
+      </div>
+      <div>
+        <p class="quote">Netflix solved distribution and lost the shelf. Feeds solved reach and never had one. <b>Festivals have taste and no persistence.</b> Venice Oscura is the shelf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="Why Venice">
+  <div class="hd"><span class="k">04 / Why Venice builds this</span><span class="t">The retention argument</span></div>
+  <div class="body" style="justify-content:flex-start">
+    <h2 style="font-size:54px;max-width:none">Model access is commoditising. <em>A culture around the output is not</em></h2>
+    <div class="g3" style="margin-top:10px">
+      <div class="col">
+        <div class="n">01 · Retention</div>
+        <h3>Nobody cancels the thing they also watch</h3>
+        <p>An aggregator competes on model parity, and parity arrives for everybody within weeks. Oscura gives Pro a reason to survive the month a competitor matches the model list — the subscription becomes a habit rather than a utility bill.</p>
+      </div>
+      <div class="col">
+        <div class="n">02 · Funnel</div>
+        <h3>Every film is an advert for the stack that made it</h3>
+        <p>Each film lists every model that made it. Most of those models are rentable inside Venice, so the disclosure is also the call to action: <b class="hi">watch it, read how it was made, open the same stack.</b></p>
+      </div>
+      <div class="col">
+        <div class="n">03 · Defensibility</div>
+        <h3>Any lab can add Seedance tomorrow</h3>
+        <p>None of them can add a catalogue with a taste, a filmmaker roster on non-exclusive terms, and a production fund the audience controls. <b class="hi">That is the part that takes three years and cannot be bought.</b></p>
+      </div>
+    </div>
+    <div class="g2" style="margin-top:18px; gap:72px; align-items:start">
+      <div class="col">
+        <div class="n">The flywheel</div>
+        <h3>Watch → see what it was made with → open the stack → make → submit → pitch the next one → get funded</h3>
+        <p style="font-size:22px">Every arrow in that loop ends somewhere Venice already monetises. The collection is the showroom; Pro is the workshop; the slate is what brings a filmmaker back rather than losing them after one film.</p>
+      </div>
+      <div class="col">
+        <div class="n">What it costs Venice</div>
+        <h3>An internal allocation, not new spend</h3>
+        <p style="font-size:22px">The model assumes <b class="hi">$2.50 of each $18 Pro subscription</b> is booked against Oscura — roughly 14%, the share of why somebody stays. Set it to zero and the standalone business still works; it is simply slower.</p>
+      </div>
+    </div>
+    <div class="dis">Venice pricing, model line-up and the 230+ figure are taken from Venice's published pricing page and changelogs and will drift. The allocation is a proposal, not an agreed internal transfer price. No part of this has been agreed with Venice.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="The product">
+  <div class="hd"><span class="k">05 / The product</span><span class="t">Already built as a working comp</span></div>
+  <div class="body">
+    <h2>Netflix-shaped browsing. <em>Criterion-shaped curation.</em> Both are already built</h2>
+    <div class="g4" style="margin-top:8px">
+      <div class="col">
+        <div class="n">Watch</div>
+        <h3>Billboard, films, search</h3>
+        <p>A weekly selection, hover-to-preview film cards, ranked search across films, filmmakers and tools, and a ten-foot TV mode driven by the remote.</p>
+      </div>
+      <div class="col">
+        <div class="n">The film page</div>
+        <h3>A number and a reason</h3>
+        <p>Every film carries a catalogue number and a note written by a person saying why it was chosen. Curation is the product, not the packaging.</p>
+      </div>
+      <div class="col">
+        <div class="n">Made with</div>
+        <h3>The tools, one click away</h3>
+        <p>Each film lists the models behind it and marks the ones Venice hosts. <b class="hi">One button opens the same stack in the Venice studio.</b></p>
+      </div>
+      <div class="col">
+        <div class="n">The slate</div>
+        <h3>Key art you can vote on</h3>
+        <p>Twelve films in development, each with a one-sheet. Viewers spend five signals a month and the top three each quarter are funded.</p>
+      </div>
+    </div>
+  </div>
+  <div class="dis"><b class="accent">Key art:</b> <a href="posters.html" style="color:var(--venetian)">the twelve slate one-sheets →</a> &nbsp;·&nbsp; <b class="accent">Status:</b> a single-file design comp with no backend. No content is licensed, no account system exists, and every film, filmmaker and figure on it is placeholder data. The build is the cheapest part of this plan, as appendix A6 sets out.</div>
+</section>
+
+<section class="slide" data-t="The slate">
+  <div class="hd"><span class="k">06 / The slate</span><span class="t">Viewers choose what gets made</span></div>
+  <div class="body" style="justify-content:flex-start">
+    <h2 style="font-size:50px;max-width:none">The only streaming service where the audience <em>hands a filmmaker a budget</em></h2>
+    <div class="g2" style="gap:76px; align-items:start; margin-top:40px">
+      <div>
+        <ul class="list">
+          <li><span class="n">01</span><span class="tx"><b>Filmmakers pitch with key art.</b> A one-sheet, a line and a logline. Twelve films sit on the slate at a time, and anyone can browse them.</span></li>
+          <li><span class="n">02</span><span class="tx"><b>Subscribers get five signals a month.</b> They reset on the 1st and do not roll over. A vote you cannot run out of is a like, and likes measure reach rather than regard.</span></li>
+          <li><span class="n">03</span><span class="tx"><b>The top three each quarter are funded.</b> 12% of net pools quarterly. At 25,000 direct subscribers and 40,000 Pro viewers that is <b class="hi">$91,459 a quarter</b> across three films.</span></li>
+          <li><span class="n">04</span><span class="tx"><b>It never touches a payout.</b> What a released film earns is settled privately by formula. The vote only decides what gets made next, so the collection never becomes a leaderboard.</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="stat"><div class="v">$91,459</div><div class="l">Slate fund per quarter at the modelled base case, paid from the platform's share and not from the filmmakers' pool</div></div>
+        <div class="col" style="margin-top:40px">
+          <div class="n">Why it matters commercially</div>
+          <h3>It makes subscribing consequential</h3>
+          <p>A subscriber with five signals and a quarterly deadline has a reason to come back and care which films are near the line. That is retention, and it costs 12% of net.</p>
+        </div>
+        <div class="col" style="margin-top:26px">
+          <div class="n">Why it matters for supply</div>
+          <h3>It answers "then what?"</h3>
+          <p>Every other home for AI film pays for work already made. <b class="hi">This one funds the next film</b>, which is what a filmmaker with a finished short actually needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dis">Slate entries and signal counts in the comp are placeholder data. The quarterly fund is an output of the same model as every other figure in this deck; nothing has been funded.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="The deal for filmmakers">
+  <div class="hd"><span class="k">07 / Supply</span><span class="t">The deal that recruits filmmakers</span></div>
+  <div class="body">
+    <h2>A filmmaker only needs one reason to say yes, and one reason to say no. <em>We remove the reason to say no</em></h2>
+    <div class="g2" style="gap:72px">
+      <div>
+        <p class="lede" style="font-size:30px;margin-bottom:22px">Half of net subscription revenue goes into the filmmakers' pool. A quarter of that pool is split <b class="hi">equally across every title in the collection</b> — a floor for being selected, paid whether or not anyone watches this month.</p>
+        <p style="font-size:24px">The remaining three quarters follow each subscriber's own viewing, weighted by completion. Subscriber money is not pooled across the whole catalogue, so a small devoted audience pays a filmmaker better than a large indifferent one.</p>
+        <p style="font-size:24px;margin-top:26px"><b class="hi">The licence is non-exclusive.</b> Copyright stays with the filmmaker. They keep posting everywhere, on the same day. Terminable on 30 days' notice, no penalty.</p>
+      </div>
+      <div>
+        <div class="g2" style="gap:34px;margin-bottom:44px">
+          <div class="stat"><div class="v">50%</div><div class="l">of net subscription<br>revenue to filmmakers</div></div>
+          <div class="stat"><div class="v">25%</div><div class="l">of the pool split equally<br>as a guaranteed floor</div></div>
+        </div>
+        <div class="g2" style="gap:34px">
+          <div class="stat"><div class="v">12%</div><div class="l">of net funding new<br>films, quarterly</div></div>
+          <div class="stat"><div class="v">0%</div><div class="l">exclusivity, in either<br>direction</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="Business model">
+  <div class="hd"><span class="k">08 / Business model</span><span class="t">Three lines, in sequence</span></div>
+  <div class="body">
+    <h2>Pro retention pays for the collection. <em>Licensing is where the margin is</em></h2>
+    <div class="g3" style="gap:52px">
+      <div class="col">
+        <div class="n">Line one · the reason Venice funds it</div>
+        <h3>Venice Pro allocation</h3>
+        <p>Oscura is bundled into Pro at $18. The model books <b class="hi">$2.50 of each Pro subscription</b> against the collection — an internal transfer, carrying no card fees, justified by retention rather than by new cash.</p>
+      </div>
+      <div class="col">
+        <div class="n">Line two · live at launch</div>
+        <h3>Direct subscription</h3>
+        <p>$6.99 a month or $69 a year for people who want the collection and not the studio. Half of net goes to the filmmakers' pool. This is what proves the thing stands on its own.</p>
+      </div>
+      <div class="col">
+        <div class="n">Line three · the actual thesis</div>
+        <h3>Curated package licensing</h3>
+        <p>The non-exclusive licence already grants the right to package the collection onward — FAST channels, airlines, telcos, hotels, film schools. <b class="hi">This is a media rights business,</b> and the reason to gather 1,000 non-exclusive titles rather than 30 exclusive ones.</p>
+      </div>
+    </div>
+    <div class="dis">Licensing revenue is unmodelled and unpriced: the rights grant is drafted, but no licence has been negotiated and no rate card exists — treat line three as the thesis under test, not a forecast. The Pro allocation is a proposed internal transfer price and has not been agreed with Venice.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="Unit economics">
+  <div class="hd"><span class="k">09 / Unit economics</span><span class="t">Modelled, formula available on request</span></div>
+  <div class="body">
+    <h2 style="font-size:54px;max-width:none">Contribution-positive on <em>both cohorts, from a few hundred viewers</em></h2>
+    <div class="g2" style="gap:62px;align-items:start">
+      <table>
+        <thead><tr><th>Per viewer, per month</th><th class="r">Direct</th><th class="r">Venice Pro</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Revenue to Oscura</td><td class="r">$6.556</td><td class="r">$2.500</td></tr>
+          <tr><td class="k">Processing (2.9% + $0.30)</td><td class="r">−$0.394</td><td class="r">$0.000</td></tr>
+          <tr><td class="k">Net revenue</td><td class="r">$6.162</td><td class="r">$2.500</td></tr>
+          <tr><td class="k">Filmmakers' pool (50%)</td><td class="r">−$3.081</td><td class="r">−$1.250</td></tr>
+          <tr><td class="k">Slate fund (12%)</td><td class="r">−$0.739</td><td class="r">−$0.300</td></tr>
+          <tr><td class="k">Delivery (9 hrs @ 1.35 GB)</td><td class="r">−$0.061</td><td class="r">−$0.061</td></tr>
+          <tr><td class="k">Fixed infra, per viewer</td><td class="r">−$0.012</td><td class="r">−$0.012</td></tr>
+          <tr class="tot"><td>Contribution</td><td class="r">$2.27 · 36.8%</td><td class="r">$0.88 · 35.1%</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <div class="col">
+          <div class="n">At 25,000 direct + 40,000 Pro viewers</div>
+          <h3>$263,900 a month · $127,027 to filmmakers · $30,486 to the slate</h3>
+          <p style="font-size:20px">That is <b class="hi">$1.52M a year paid to filmmakers</b> and <b class="hi">$366K a year funding new films</b>, before a single licensing deal. Gross contribution $90,911 a month, 34.4% of gross.</p>
+        </div>
+        <div class="col" style="margin-top:24px">
+          <div class="n">What the bundle does to CAC</div>
+          <h3>The Pro cohort costs nothing to acquire</h3>
+          <p style="font-size:20px">They are already Venice subscribers. Direct subscribers still have to be bought: at $2.27 contribution a $30 CAC is a 13-month payback, workable below roughly 6% monthly churn. <b class="hi">Pro viewers invert that arithmetic</b> — they arrive free and reduce Pro's churn rather than adding to ours.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dis">Both cohorts assume nine viewing hours a month. The Pro column's $0 processing is correct only because the charge already happened at Venice; it is not a saving, it is a cost booked elsewhere.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="Go to market">
+  <div class="hd" data-tight><span class="k">10 / Go to market</span><span class="t">Supply first, and it is not close</span></div>
+  <div class="body">
+    <h2 style="font-size:50px;max-width:none">Recruit 100 filmmakers before we try to recruit one subscriber. <em>The first forty are already Venice users</em></h2>
+    <div class="g2" style="gap:76px">
+      <div>
+        <ul class="list">
+          <li><span class="n">01</span><span class="tx"><b>Start inside the house.</b> Venice already bills thousands of people who generate video every week. A single in-product message to Pro subscribers who use the video models reaches a self-identifying filmmaker cohort that costs nothing to find — and the free shelf gives them something to show people before they have been accepted.</span></li>
+          <li><span class="n">02</span><span class="tx"><b>Then mine the festival cohorts.</b> Runway AIF, Project Odyssey, Curious Refuge and the independent AI festivals publish their selections. These filmmakers have finished work, a public identity and no distribution. Approach them directly, with the payout formula and the licence in hand.</span></li>
+          <li><span class="n">03</span><span class="tx"><b>Publish the deal, not the brand.</b> A page that states the split, the rights and the route to funding in plain words outperforms any amount of positioning copy with this audience. The comp's filmmakers page is three promises and a form.</span></li>
+          <li><span class="n">04</span><span class="tx"><b>Trade curation for promotion.</b> Offer the strongest filmmakers a jury seat or a curated collection. It costs nothing, it recruits their audience, and it builds the taste brand in public.</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col">
+          <div class="n">First 100 filmmakers</div>
+          <h3>Milestone: 40 licensed titles across shorts, features and series</h3>
+          <p>Enough for a collection with real breadth, a jury slate and genuine rails — the point at which the catalogue stops looking like a demo.</p>
+        </div>
+        <div class="col" style="margin-top:36px">
+          <div class="n">First 10,000 direct + 16,000 Pro</div>
+          <h3>Milestone: $105,560 monthly revenue, $50,811 a month to filmmakers, $12,195 a month to the slate</h3>
+          <p>Reached through Pro's existing base first, then filmmaker audiences, the festival circuit and the press story — in that order. Paid acquisition is not in the plan until churn is known.</p>
+        </div>
+      </div>
+    </div>
+    <div class="dis">Market choice: US/global, English-first — the largest pool of AI filmmakers is English-speaking and concentrated in the US and UK. The company is domiciled in Spain, which makes EU AI Act compliance native rather than bolted on, and gives a European footing for the licensing line.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="Risks">
+  <div class="hd"><span class="k">11 / What must be true</span><span class="t">Risks, stated plainly</span></div>
+  <div class="body">
+    <h2>Four things have to hold. <em>Three of them we control</em></h2>
+    <table>
+      <thead><tr><th style="width:30%">The risk</th><th style="width:14%">Verdict</th><th>What we do about it</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="k">Filmmakers won't licence non-exclusively</td>
+          <td class="k accent">We control</td>
+          <td>They already do this for festivals, for YouTube and for Vimeo. The floor plus a real pool beats a laurel. The filmmakers page in the comp makes this argument in three lines.</td>
+        </tr>
+        <tr>
+          <td class="k">Consumers won't pay for AI film at all</td>
+          <td class="k accent">Testable cheaply</td>
+          <td>This is the central unknown and the reason Phase 0 ships a real catalogue before any build spend on accounts. If nobody pays, we have lost weeks rather than a round — and the licensing line survives without a consumer business.</td>
+        </tr>
+        <tr>
+          <td class="k">Venice owning the shelf taints the curation</td>
+          <td class="k accent">Partly</td>
+          <td>The sharpest objection to the plan, and inside Venice it is ours: a company selling model access has every incentive to favour films made with its own models, and an audience that suspects it stops trusting the shelf — which is the whole asset. <b class="hi">The commitments are structural:</b> tool-blind selection against a published rule, a label that discloses the stack without scoring it, and identical terms, payouts and slate eligibility for non-Venice work. Venice is a multi-vendor aggregator rather than a single lab, which narrows the conflict without removing it.</td>
+        </tr>
+        <tr>
+          <td class="k">Churn kills the subscription maths</td>
+          <td class="tbd">Genuinely uncertain</td>
+          <td>Above roughly 8% monthly churn the model does not work at $6.99. We measure it before we scale spend, and we treat the annual plan — not new titles — as the primary retention lever.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="slide" data-t="Team">
+  <div class="hd"><span class="k">12 / Team</span><span class="t">Who is doing this, and what is missing</span></div>
+  <div class="body">
+    <h2>The three jobs this company actually needs. <em>Say plainly which are filled</em></h2>
+    <div class="g3" style="margin-top:6px">
+      <div class="col">
+        <div class="n">Job 01 · The taste</div>
+        <h3>Whoever chooses the films</h3>
+        <p>The single non-delegable role. The selection is the entire product, so the person making it has to be nameable and their taste has to be arguable in public.</p>
+        <p style="margin-top:16px" class="tbd">[ name · credentials · why their taste is worth trusting ]</p>
+      </div>
+      <div class="col">
+        <div class="n">Job 02 · The build</div>
+        <h3>Whoever ships the ledger</h3>
+        <p>Phase 0 and 1 are eight to sixteen weeks of competent work. The hard part is the qualified-watch-time ledger, because filmmakers will audit it and payouts depend on it.</p>
+        <p style="margin-top:16px" class="tbd">[ name · shipped what before ]</p>
+      </div>
+      <div class="col">
+        <div class="n">Job 03 · The rights</div>
+        <h3>Whoever signs the filmmakers</h3>
+        <p>Recruitment is a relationship business on the festival circuit, and the licence has to be defensible. Can be fractional or advised, but it cannot be nobody.</p>
+        <p style="margin-top:16px" class="tbd">[ name, or the advisor / counsel standing in ]</p>
+      </div>
+    </div>
+    <p style="margin-top:46px;font-size:24px"><b class="hi">What exists today:</b> a formed Spanish entity, a working product comp with a live economic model, a drafted filmmaker licence, and this deck. <b class="hi">What does not:</b> a licensed catalogue, a paying subscriber, or a line of production code.</p>
+  </div>
+</section>
+
+<section class="slide" data-t="Appendix">
+  <div class="hd"><span class="k">Appendix</span><span class="t">Supporting detail</span></div>
+  <div class="body">
+    <h2 style="max-width:20ch">The twelve slides before this are the proposal. <em>These six are the working</em></h2>
+    <ul class="list" style="max-width:1100px; margin-top:20px">
+      <li><span class="n">A1</span><span class="tx"><b>What a film earns.</b> The payout table at four audience sizes.</span></li>
+      <li><span class="n">A2</span><span class="tx"><b>Demand.</b> Why anyone subscribes.</span></li>
+      <li><span class="n">A3</span><span class="tx"><b>Comparables.</b> Curated subscription services and their pricing.</span></li>
+      <li><span class="n">A4</span><span class="tx"><b>Moat.</b> What compounds over time.</span></li>
+      <li><span class="n">A5</span><span class="tx"><b>Delivery cost.</b> The one technical decision that matters.</span></li>
+      <li><span class="n">A6</span><span class="tx"><b>Build plan.</b> Three phases, in order.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" data-t="The filmmaker's maths">
+  <div class="hd"><span class="k">A1 / Supply</span><span class="t">What a film actually earns</span></div>
+  <div class="body">
+    <h2>An average title in a 400-film collection holds <em>0.25% of watch-time.</em> Here is what that pays</h2>
+    <div class="g2" style="gap:80px;align-items:start">
+      <table>
+        <thead><tr><th>Per month, average title (0.25% share)</th><th class="r">Floor</th><th class="r">Follow</th><th class="r">Total</th></tr></thead>
+        <tbody>
+          <tr><td class="k">5,000 direct + 8,000 Pro</td><td class="r">$15.88</td><td class="r">$47.63</td><td class="r">$63.51</td></tr>
+          <tr><td class="k">25,000 direct + 40,000 Pro</td><td class="r">$79.39</td><td class="r">$238.17</td><td class="r">$317.57</td></tr>
+          <tr><td class="k">100,000 direct + 160,000 Pro</td><td class="r">$317.57</td><td class="r">$952.70</td><td class="r">$1,270.27</td></tr>
+          <tr class="tot"><td>250,000 direct + 400,000 Pro</td><td class="r">$793.92</td><td class="r">$2,381.75</td><td class="r">$3,175.66</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <div class="col">
+          <div class="n">The comparison that recruits</div>
+          <h3>A film that gets a million views on a short-form feed earns roughly $50</h3>
+          <p>At the base case the same film earns <b class="hi">$318 a month, recurring</b> — and it is still there next month. The floor alone, earned just for being selected, is $79 a month. <b class="hi">The Pro cohort is what doubles this</b>; on direct subscriptions alone the same title earns $193.</p>
+        </div>
+        <p style="font-size:20px;margin-top:30px;color:var(--muted)">Modelled from a $6.99 monthly / $69 annual subscription at a 35% annual mix, a $2.50 Pro allocation at 1.6 Pro viewers per direct subscriber, 9 average viewing hours, 400 titles, 25% floor, 12% slate fund. Short-form comparison at $0.05 per 1,000 views. Published creator rates vary by an order of magnitude; the model is public so it can be argued with.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="Demand">
+  <div class="hd"><span class="k">A2 / Demand</span><span class="t">Why anyone subscribes</span></div>
+  <div class="body">
+    <h2>We are not selling AI. <em>We are selling the end of the scroll</em></h2>
+    <div class="g3" style="margin-top:6px">
+      <div class="col">
+        <div class="n">The promise</div>
+        <h3>Every title was chosen by a person</h3>
+        <p>No algorithmic rows. The subscriber's whole reason to pay is that they will not waste forty minutes again. Curation is the product, not the packaging.</p>
+      </div>
+      <div class="col">
+        <div class="n">The story</div>
+        <h3>This is a press story that writes itself</h3>
+        <p>"The Criterion Collection for AI film" is a headline. Every selection is a reason for the filmmaker's audience, the model labs and the trade press to link to us.</p>
+      </div>
+      <div class="col">
+        <div class="n">The wedge audience</div>
+        <h3>People already watching AI film, badly</h3>
+        <p>The festival circuit, the AI filmmaking communities, and the model-tool user base are all pre-qualified audiences who currently watch this work in the worst possible place.</p>
+      </div>
+    </div>
+    <p style="margin-top:44px;font-size:24px"><b class="hi">Answered by the filmmakers themselves.</b> Every filmmaker we admit brings their own audience to a platform that pays them. Supply-side recruitment is the demand strategy — this is the reason to solve supply first.</p>
+  </div>
+</section>
+
+<section class="slide" data-t="Comparables">
+  <div class="hd"><span class="k">A3 / Comparables</span><span class="t">The model is proven. The category is empty.</span></div>
+  <div class="body">
+    <h2 style="font-size:56px;max-width:none">Curated niche subscription is not an experiment. <em>It is the part of streaming that is still growing</em></h2>
+    <div class="g2" style="gap:72px;align-items:start">
+      <table>
+        <thead><tr><th>Curated subscription</th><th class="r">Price</th><th class="r">Scale</th></tr></thead>
+        <tbody>
+          <tr><td class="k">MUBI<br><span style="font-size:16px;color:var(--muted)">Arthouse film, curated</span></td><td class="r">$14.99</td><td class="r">1.7M subs<br><span style="font-size:16px;color:var(--muted)">~$200M rev</span></td></tr>
+          <tr><td class="k">Criterion Channel<br><span style="font-size:16px;color:var(--muted)">The reference brand</span></td><td class="r">$10.99</td><td class="r">50+ yrs<br><span style="font-size:16px;color:var(--muted)">of pricing power</span></td></tr>
+          <tr><td class="k">Nebula<br><span style="font-size:16px;color:var(--muted)">Creator-owned, revenue-shared</span></td><td class="r">$6.00</td><td class="r">~680k subs</td></tr>
+          <tr class="tot"><td>Venice Oscura</td><td class="r">$6.99</td><td class="r">0 — today</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <div class="col">
+          <div class="n">The category signal</div>
+          <h3>Specialty SVOD grew 20–27% year on year while premium SVOD plateaued</h3>
+          <p style="font-size:20px">Crunchyroll passed 21 million subscribers on one focused catalogue. Niche won — a narrow, well-curated shelf beating breadth is no longer a contrarian thesis.</p>
+        </div>
+        <div class="col" style="margin-top:26px">
+          <div class="n">Why the incumbents don't take this</div>
+          <h3>AI film is brand-dilutive to every one of them</h3>
+          <p style="font-size:20px">MUBI's whole curatorial identity is auteur cinema and human authorship; AI work on that shelf costs them more than it earns. <b class="hi">The gap is structural, not an oversight.</b></p>
+        </div>
+        <p style="font-size:17px;margin-top:16px;color:var(--muted)">Figures as reported September 2026. MUBI was loss-making on that revenue. None of these are our numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-t="Moat">
+  <div class="hd"><span class="k">A4 / Moat</span><span class="t">What compounds</span></div>
+  <div class="body">
+    <h2>None of this is a technology moat. <em>All of it compounds</em></h2>
+    <div class="g4" style="margin-top:6px">
+      <div class="col">
+        <div class="n">01</div>
+        <h3>A taste that becomes a mark</h3>
+        <p>The selection is the brand. If an Oscura spine number reliably means "worth your time", the mark does the discovery work for every title we add. This is the only asset that gets stronger with age.</p>
+      </div>
+      <div class="col">
+        <div class="n">02</div>
+        <h3>A filmmaker roster with a budget attached</h3>
+        <p>Nobody else offers a guaranteed floor, zero exclusivity, and a production fund the audience votes on. The roster is cheap to hold, impossible to lift, and improves as the payout grows.</p>
+      </div>
+      <div class="col">
+        <div class="n">03</div>
+        <h3>A provenance and compliance layer</h3>
+        <p>A consistent, machine-readable model-stack disclosure across a whole catalogue is a genuine operational asset under Article 50 — and a service tools and studios will pay for.</p>
+      </div>
+      <div class="col">
+        <div class="n">04</div>
+        <h3>Licensable rights, aggregated</h3>
+        <p>A thousand non-exclusive titles clear for onward licensing is a catalogue no competitor can assemble quickly. That is the asset the second revenue line is built on.</p>
+      </div>
+    </div>
+    <p style="margin-top:46px;font-size:24px"><b class="hi">The real risk is not competition — it is indifference.</b> Model labs will keep building showcases, and they will keep not being a shelf. The difference here is that Venice already has the distribution, the filmmakers and the models; what it does not yet have is a reason for any of them to stay once a competitor matches the model list. <b class="hi">This is that reason.</b></p>
+  </div>
+</section>
+
+<section class="slide" data-t="Delivery stack">
+  <div class="hd"><span class="k">A5 / The one technical decision that matters</span><span class="t">Delivery is 70–95% of a video bill</span></div>
+  <div class="body">
+    <h2>The comp assumes $0.005/GB egress. <em>Managed video APIs cost up to 9× that</em></h2>
+    <div class="g2" style="gap:78px;align-items:center">
+      <div class="bars">
+        <div class="bar win"><span class="nm">Self-encoded HLS + Bunny CDN<br>@ $0.005/GB</span><span class="track"><span class="fill" style="width:11%"></span></span><span class="vv">$1,519/mo</span></div>
+        <div class="bar win"><span class="nm">Bunny CDN @ $0.010/GB</span><span class="track"><span class="fill" style="width:22.5%"></span></span><span class="vv">$3,038/mo</span></div>
+        <div class="bar lose"><span class="nm">Bunny Stream<br>(delivered per minute)</span><span class="track"><span class="fill" style="width:50%"></span></span><span class="vv">$6,750/mo</span></div>
+        <div class="bar lose"><span class="nm">Mux<br>(delivered per minute)</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="vv">$10,800/mo</span></div>
+        <div class="bar lose"><span class="nm">Cloudflare Stream<br>($1 / 1,000 min delivered)</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="vv">$13,500/mo</span></div>
+      </div>
+      <div>
+        <p style="font-size:22px">At 25,000 subscribers watching 9 hours a month — 225,000 viewing hours — the delivery stack is the difference between <b class="hi">$18k and $162k a year.</b></p>
+        <p style="font-size:22px">Managed video APIs buy back enormous engineering time and charge up to 9× the egress for it. At launch, that trade is correct. Past roughly 10,000 subscribers it is not.</p>
+        <p style="font-size:22px"><b class="hi">Plan:</b> start on a managed API to ship in weeks, then move to self-encoded HLS with AV1/H.265 renditions on a zero-egress object store behind a cheap CDN — architected for the migration from day one, because the source-of-truth is the master file, not the provider.</p>
+      </div>
+    </div>
+    <div class="dis">Egress and delivery rates read from published provider pricing and a 2026 video-cost survey in September 2026; they change often, so re-price before committing. AV1/H.265 typically cuts delivered bytes 40–70% and is the single largest cost lever after the CDN choice.</div>
+  </div>
+</section>
+
+<section class="slide" data-t="What it takes to build">
+  <div class="hd"><span class="k">A6 / What it actually takes to build</span><span class="t">Three phases, in order</span></div>
+  <div class="body">
+    <table>
+      <thead><tr><th style="width:15%">Phase</th><th style="width:44%">Build</th><th>Why it gates the next thing</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="k">0 → live<br><span style="color:var(--muted)">8–12 weeks</span></td>
+          <td class="k">Real catalogue (25–40 licensed titles) · Next.js app with SSR <b>for search discovery</b> · Bunny or Mux delivery · Strapi/Sanity title records with rights windows · C2PA verification on ingest · watch-time event pipeline · static catalogue, no accounts</td>
+          <td>The comp is single-file HTML. It has no SEO, no accounts and no real video. Shipping a real, indexable catalogue is what makes the collection findable and what proves the curation claim.</td>
+        </tr>
+        <tr>
+          <td class="k">1 → monetise<br><span style="color:var(--muted)">+8 weeks</span></td>
+          <td class="k">Supabase auth · Stripe Billing · <b>Stripe Connect for filmmaker payouts</b> · the qualified-watch-time ledger · monthly statements · Roku/Fire TV/Tizen apps</td>
+          <td>Stripe Connect is what stops us becoming a money transmitter. The watch-time ledger is the most important engineering in the company — payouts depend on it and filmmakers will audit it.</td>
+        </tr>
+        <tr>
+          <td class="k">2 → scale<br><span style="color:var(--muted)">ongoing</span></td>
+          <td class="k">Self-encoded ABR ladder (AV1/H.265) · embedding-based recommendation · syndication packaging and reporting · DRM if licensing partners require it</td>
+          <td>Every one of these is a cost or a revenue lever rather than a feature. Move when the volume justifies it.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:40px;font-size:23px"><b class="hi">The honest read:</b> the streaming surface is a solved problem — this is eight to twelve weeks of competent work, not a research project. The two genuinely hard things are <b class="hi">the qualified-watch-time ledger</b> and <b class="hi">rights and provenance at ingest.</b> Everything else is commodity.</p>
+  </div>
+</section>
+
+</div>
+
+<div id="bar"></div>
+<div id="chrome">
+  <span id="counter">1 / 17</span>
+  <button id="prev" aria-label="Previous slide">←</button>
+  <button id="next" aria-label="Next slide">→</button>
+</div>
+
+<script>
+const slides = Array.from(document.querySelectorAll('.slide'));
+const stage  = document.getElementById('stage');
+const bar    = document.getElementById('bar');
+const counter= document.getElementById('counter');
+let i = Math.min(slides.length - 1, Math.max(0, parseInt(localStorage.getItem('oscura.deck') || '0', 10) || 0));
+
+function fit(){
+  const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+  stage.style.transform = `translate(${(innerWidth - 1920*s)/2}px,${(innerHeight - 1080*s)/2}px) scale(${s})`;
+}
+function show(n){
+  i = Math.max(0, Math.min(slides.length - 1, n));
+  slides.forEach((s, k) => s.classList.toggle('on', k === i));
+  counter.textContent = (i + 1) + ' / ' + slides.length;
+  bar.style.width = ((i + 1) / slides.length * 100) + '%';
+  document.title = 'Venice Oscura — ' + (slides[i].dataset.t || 'deck');
+  try { localStorage.setItem('oscura.deck', String(i)); } catch (e) {}
+}
+addEventListener('resize', fit);
+addEventListener('keydown', e => {
+  if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) { e.preventDefault(); show(i + 1); }
+  else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); show(i - 1); }
+  else if (e.key === 'Home') { show(0); }
+  else if (e.key === 'End') { show(slides.length - 1); }
+  else if (e.key.toLowerCase() === 'f') {
+    document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+  }
+});
+document.getElementById('prev').onclick = () => show(i - 1);
+document.getElementById('next').onclick = () => show(i + 1);
+// click the right two-thirds to advance, left third to go back — for presenting from a trackpad-less device
+stage.addEventListener('click', e => { show(e.clientX > innerWidth * 0.33 ? i + 1 : i - 1); });
+fit(); show(i);
+</script>
+</body>
+</html>
